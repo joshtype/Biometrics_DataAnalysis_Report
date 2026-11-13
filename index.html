@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biometrics Acceptance</title>
+
+        <!-- chart plots -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
+
+        <!-- custom css & js -->
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+
+        <!-- bootstrap cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+     
+
+    <!-- BODY -->
+    <body>
+        <!-- HEADER BANNER -->
+        <div class="container-fluid p-0" id="page-container">
+
+            <header id="banner-img">
+                <img src="img/banner.png" width="100%">
+            </header>
+
+            <!-- NAV TABS -->
+            <nav id="idx-navbar">
+                <ul class="nav nav-tabs">
+
+                    <li class="nav-item">
+                        <button class="nav-link" id="homeabout-btn"
+                                data-bs-toggle="tab"
+                                data-bs-target="#homeabout-content">
+                            Home (About)
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="nav-link" id="interactive-btn"
+                                data-bs-toggle="tab"
+                                data-bs-target="#interactive-content">
+                            Interactive Chart
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="nav-link" id="correlation-btn"
+                                data-bs-toggle="tab"
+                                data-bs-target="#correlation-content">
+                            Correlation
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- MAIN CONTENT -->
+            <main id="tab-container">            
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="homeabout-content">
+                        <h2>About this project</h2>
+                        <p>
+                            This website presents analyses of user perceptions
+                            toward biometric modalities and examines stregnth of
+                            corrleation with acceptance of a modality vs experience 
+                            and vs concern over privacy. Data analyses were conducted 
+                            as part of a larger report on human-computer interaction (HCI) 
+                            and biometric acceptance arguing that increased user 
+                            experience via more user-friendly biometric HCI would 
+                            improve user acceptance of such biometrics.
+                        </p>
+                        <p>
+                            The dataset used for analyses was generated from a survey
+                            conducted for a paper focusing on medical biometrics,
+                            "Perspectives on facial images, DNA and other biometrics"
+                            (Wagner, 2021). It was publicly hosted at <a href="https://doi.org/10.7303/SYN25618565">
+                            Synapse (DOI: 10.7303/SYN25618565)</a>. 
+                        </p>
+                        <p>
+                            The survey recorded several demographic variables with 
+                            metrics for measurings experience across six biometric 
+                            modalities, acceptability per modality, acceptability 
+                            across a number of biomedical applications, trust in 
+                            facial recognition and DNA modalities across several
+                            entities, and general concern over privacy infringement.
+                            Variables used by present research included demographics, 
+                            experience, acceptability per modality, acceptability per 
+                            modality sgrouped-by demographics, and privacy concern. 
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="interactive-content">
+                        <h2>Interactive Chart</h2>
+                        <canvas id="inter-chart"></canvas>
+                    </div>
+
+                    <div class="tab-pane fade" id="correlation-content">
+                        CORRELATION INFO
+                    </div>
+
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <footer id="footer">
+                <p>&copy 2026 Joshua Gregory</p>
+                <p>GH Repo: <a href="https://github.com/joshtype/Biometrics_DataAnalysis_Report">joshtype/Biometrics_DataAnalysis_Report</a></p>
+                <p>Data Source: <a href="https://doi.org/10.7303/SYN25618565">Wagner, J. (2021). Synapse</a></p>
+            </footer>
+
+        </div>
+
+        <!-- bootstrap js cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
