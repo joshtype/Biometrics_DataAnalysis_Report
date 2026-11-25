@@ -1,0 +1,35 @@
+const data = {
+    Modalities: ["Fingerprint", "Voice Recog", "Facial Recog", "Iris/Retina", "Palm Geometry", "DNA"],
+
+    Experience: {
+        meanPerMod: [2.418, 1.652, 1.855, 1.676, 1.579, 1.789]
+    },
+
+    Trust: {
+        orgs: [],
+        meanPerOrgFacial: [],
+        meanPerOrgDNA: []
+    },
+
+    PrivConcern: {
+        levels: [1, 2, 3, 4, 5],
+        numPerLevel: [],
+        meanLevel: []
+    },
+
+    Acceptance: {
+        applications: [],
+        meanPerMod: [4.474, 3.560, 3.390, 3.263, 3.527, 2.786],
+        meanPerApp: [],
+    },
+
+    AgeGroup: {
+        ageCategories: ["18-25 yo", "26-35 yo", "36-45 yo", "46-55 yo", "56-65 yo", "66-75 yo", "76+ yo"],
+        meanPerModByAge: []
+    },
+
+    PoliGroup: {
+        poliCategories: 
+        meanPerModByPol: [],
+    }
+}
